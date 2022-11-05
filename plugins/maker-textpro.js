@@ -66,11 +66,11 @@ let name = await conn.getName(who)
     sourceUrl: sgc
      }}
   })*/
- conn.send3ButtonImg(m.chat, result.data, `Effect *${effect}nya* Dah Jadi ${tag}`,`Subs My Channel ${global.snh}`, 'Menu', '.menu', 'Owner', '.owner', 'Credit', '.credit', global.fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
+ conn.send3ButtonImg(m.chat, result.data, `Effect *${effect}nya* Dah Jadi ${tag}`,`𝚂𝙷𝚄𝚁𝙰𝙽𝙱𝙾𝚃𝚉-𝙼𝙳`, 'Menu', '.menu', 'speed', '.ping', global.fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: sgc,
     mediaType: 2, 
     description: sgc,
-    title: "Iɴɪ Dʜ Sɪᴀᴘ Cᴜʏ 〠",
+    title: "Done...",
     body: wm,
     thumbnail: fs.readFileSync('./thumbnail.jpg'),
     sourceUrl: `https://wa.me/6281361281833?text=Hᴀɪ+Bɢ+Aʟᴅɪ`
@@ -125,6 +125,26 @@ var effects = [
   {
     "title": "3Dgradient2",
     "url": "https://textpro.me/online-3d-gradient-text-effect-generator-1020.html"
+  },
+  {
+    "title": "ViGame",
+    "url": "https://textpro.me/video-game-classic-8-bit-text-effect-1037.html"
+  },
+  {
+    "title": "TikTok",
+    "url": "https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html"
+  },
+  {
+    "title": "articgrap",
+    "url": "https://textpro.me/create-artistic-typography-online-1086.html"
+  },
+  {
+    "title": "BwBear",
+    "url": "https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html"
+  },
+  {
+    "title": "window",
+    "url": "https://textpro.me/write-text-on-foggy-window-online-free-1015.html"
   },
   {
     "title": "3Dglossymetal",
