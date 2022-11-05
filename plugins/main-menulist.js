@@ -9,9 +9,9 @@ import fetch from 'node-fetch'
 
 const defaultMenu = {
 before: ` `.trimStart(),
-header: '⃟⃟☰⃟⃟ᭁ═━┈━┈༓ *%category* ',
-body: `┆➨ %cmd %isPremium %islimit`,
-footer: `⃟⃟⃟⃟࿑⃟⃟⃟࿐═┈༓᭄༤\n`,
+header: ' ╔═══❒𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄❒════ ',
+body: `╠⋗ %cmd %isPremium %islimit`,
+footer: `╚═══════《✧》══════❒\n`,
 after: ` `,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
@@ -257,7 +257,7 @@ setTimeout(resolve, 1000)
 let mpt = clockString(_mpt)
 const sections = [
 {
-title: `⃟⟣⟚⟝ ⟡ List Menu ${namebot} ⟡ ⟞⟚⟢⃟`,
+title: `═❒𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄❒═`,
 rows: [
 {title: `${emot} Rpg`, rowId: ".? rpg", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀᴍ Mᴇɴᴜ Rᴘɢ"},
 {title: `${emot} Exp`, rowId: ".? xp", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀɴ Mᴇɴᴜ Exᴘ"},
@@ -285,10 +285,8 @@ rows: [
 {title: `${emot} Owner`, rowId: ".? owner", description: "Mᴇɴᴀᴍᴘɪʟᴋᴀɴ Mᴇɴᴜ Oᴡɴᴇʀ"},
 ]
 }, {
-title: `⃟⟣⟚⟝ ⟡ Support Me ${namebot} ⟡ ⟞⟚⟢⃟`,
+title: `═❒𝙴𝚂𝙲𝙴𝙷❒═`,
 rows: [
-{title: `⟐ Donasi ⟐`, rowId: ".donasi", description: "Donasi Agar Saya Semangat Untuk Update Bot:)"},
-{title: `⟐ Sewa Bot ⟐`, rowId: ".sewa", description: "Mau Nyewa?"},
 {title: `⟐ Script ⟐`, rowId: ".sc", description: "Menampilkan Script Bot Ini"},
 ]}]
 let psan = 'bagaimana kabarmu?'
@@ -318,24 +316,25 @@ let tagnya = `@${m.sender.split`@`[0]}`
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `*/
-let con = `┏━━━━━━━━━━━━━━━━━━━┓
-┆     List Menu ${namebot}
-┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┛
-┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
-┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
-┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
-┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┃▷ *Pʀᴇᴍɪᴜᴍ* : ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
-┃▷ *Rᴏʟᴇ* : ${usrs.role}
-┃▷ *Lɪᴍɪᴛ* : ${usrs.limit}
-┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
-╰╴╴╴╳
-▎▍▌▋▊▍▋▍▌▌▌▋▍▎▎▍▍▎▎▎▎▍
-╭╴╴╼╳
-│◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
-╰╸╳`
+let con = `●──────────────●
+ ㅤ     ㅤ List Menu
+ ●──────────────●
+╭───────────❒
+│ㅤнᴇʟʟo ${tagnya}⁩
+├───────────
+│
+├─✦ʏouʀ ιɴғo✦
+│► Nama :  ${usrs.registered ? usrs.name : conn.getName(m.sender)}
+│► Status :   ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+│► Premium :  ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
+│► Role :  ${usrs.role}
+│► Limit :  ${usrs.limit}
+│► Level :  ${usrs.limit}
+╰──────❒
+ꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖ
+╭─────────❒
+│► All Fitur :  ${totalf}
+╰───❒`
 let hariRayaramadan = new Date('April 21, 2023 23:59:59') 
      let sekarangg = new Date().getTime() 
      let lebih = hariRayaramadan - sekarangg 
@@ -343,21 +342,20 @@ let hariRayaramadan = new Date('April 21, 2023 23:59:59')
      let jamm = Math.floor( lebih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)) 
      let menitt = Math.floor( lebih % (1000 * 60 * 60) / (1000 * 60)) 
      let detikk = Math.floor( lebih % (1000 * 60) / 1000) 
-let tett = `▢ ▱▱▱ ▣► Dᴀᴛᴇ ◄▣ ▱▱▱ ▢ 
-▯▷ *Uᴘᴛɪᴍᴇ* : ${mpt}
-▯▷ *Tɪᴍᴇ* :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
-▯▷ *Tᴀɴɢɢᴀʟ Isʟᴀᴍ* : ${dateIslamic}
-▢ ▱▱▱▱▱▱▱▱▱▱▱▱ ▢
+let tett = `╭──────❒ Dᴀᴛᴇ ❒ ────
+│► *Uᴘᴛɪᴍᴇ* : ${mpt}
+│► *Tɪᴍᴇ* :  ${moment.tz('Asia/Jakarta').format('HH')} H${moment.tz('Asia/Jakarta').format('mm')} M${moment.tz('Asia/Jakarta').format('ss')} S
+│► *Tᴀɴɢɢᴀʟ Isʟᴀᴍ* : ${dateIslamic}
+╰───────────────❒
 `
-let fot = `Nᴏᴛᴇ!! : Jɪᴋᴀ Aɴᴅᴀ Mᴇɴᴇᴍᴜᴋᴀɴ Bᴜɢ/Eʀʀᴏʀ 
-Bɪsᴀ Rᴇᴘᴏʀᴛ Dᴇɴɢᴀɴ Cᴀʀᴀ ▻ ketik #report 
+let fot = `jangan Lupa Tersenyum 
 `
 const listMessage = {
 text: tett,
 footer: fot,
 mentions: await conn.parseMention(con),
 title: con,
-buttonText: `CLICK HERE ⎙`, 
+buttonText: `𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴⎙`, 
 sections
 }
 if (teks == '404') {
@@ -498,30 +496,32 @@ ptt: false, seconds: 0,contextInfo: {
 
 //------------------ menuny
 let ownernya = `@${nomorown.split`@`[0]}`
-let almenu = `┏┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╼
-┆ Hᴀʟᴏ ${tagnya}
-┢╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╶╼
-┣╌ ⟪ *Yᴏᴜʀ Iɴғᴏ* ⟫
-┃▷ *Nᴀᴍᴇ* : ${usrs.registered ? usrs.name : conn.getName(m.sender)}
-┃▷ *Sᴛᴀᴛᴜs* : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
-┃▷ *Pʀᴇᴍɪᴜᴍ* : ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
-┃▷ *Rᴏʟᴇ* : ${usrs.role}
-┃▷ *Lɪᴍɪᴛ* : ${usrs.limit}
-┃▷ *Lᴇᴠᴇʟ* : ${usrs.limit}
-┃▷ *Mᴏɴᴇʏ* : ${money}
-╰╴╴╴╳
-▎▍▌▋▊▍▌▌▋▍▊▋▐▍▊▊▊▍▍
-╭╴╴╼ ▻ *INFO BOT* ◅ ╾╶ ╮
-│◇ Aʟʟ Fɪᴛᴜʀ: ${totalf}
-│◇ Oᴡɴᴇʀ: ${ownernya}
-│◇ Mᴏᴅᴇ: ${mode}
-│◇ Pʟᴀᴛғᴏʀᴍ: ${platform}
-│◇ Tʏᴘᴇ: Nodejs 
-│◇ Bᴀɪʟᴇʏs: Multi Device
-│◇ Pʀᴇғɪx: ${_p}
-│◇ Uᴘᴛɪᴍᴇ: ${mpt} 
-│◇ Dᴀᴛᴀʙᴀsᴇ: ${totalreg}
-╰╸╳`
+let almenu = `╔══════《✧》══════╗
+           𝙷𝙰𝙻𝙻𝙾 ${tagnya}
+╚══════《✧》══════╝
+
+╔══════《✧》══════╗
+╠⋗[𝚈𝙾𝚄𝚁 𝙸𝙽𝙵𝙾]
+║ ►ɴᴀᴍᴇ :${usrs.registered ? usrs.name : conn.getName(m.sender)}
+║ ►sᴛᴀᴛᴜs : ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
+║ ►ᴘʀᴇᴍᴇɴɪᴜᴍ : ${usrs.premiumTime > 1 ? '✔ Ya': '✘ Tidak'}
+║ ►ʀᴏʟᴇ : ${usrs.role}
+║ ►ʟɪᴍɪᴛ : ${usrs.limit}
+║ ►ʟᴇᴠᴇʟ : ${usrs.limit}
+║ ►ᴍᴏɴᴇʏ : ${money}
+╚══════❒
+ꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖꔖ
+╔════《𝙸𝙽𝙵𝙾 𝙱𝙾𝚃》════╗
+╠⋗¤ ᴀʟʟ ғɪᴛᴜʀ : ${totalf}
+╠⋗¤ ᴏᴡɴᴇʀ : ${ownernya}
+╠⋗¤ ᴍᴏᴅᴇ : ${mode}
+╠⋗¤ ᴘʟᴀᴛғᴏʀᴍ : ${platform}
+╠⋗¤ ᴛʏᴘᴇ : Nodejs
+╠⋗¤ ʙᴀɪʟᴇʏs : Multi Device
+╠⋗¤ ᴘʀᴇғɪx : ${_p}
+╠⋗¤ ᴜᴘᴛɪᴍᴇ : ${mpt}
+╠⋗¤ ᴅᴀᴛᴀʙᴀsᴇ : ${totalreg}
+╚═══════《✧》══════╝`
 let nomorwa = '0'
 let nomorowm1 = '6281361281833'
 let d1 = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
