@@ -1,0 +1,84 @@
+
+
+import fs from 'fs'
+import moment from 'moment-timezone'
+
+let handler = async (m, { conn, usedPrefix, __dirname, text, command }) => {
+let tag = `@${m.sender.replace(/@.+/, '')}`
+  let mentionedJid = [m.sender]
+let name = conn.getName(m.sender)
+let flaaa2 = [
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=amped-logo&doScale=true&scaleWidth=800&scaleHeight=500&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=',
+'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text=']
+let cin = `${pickRandom(global.sad)}`
+let nth = '❲ *sad* ❳'
+conn.sendButtonImg(m.chat, `${pickRandom(flaaa2)}` + `${ucapan()} ` + `${name}`, nth, '❏ ' + cin, 'Nᴇxᴛ', `${usedPrefix}pantun`, m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: 'https://Instagram.com/srnta_ad',
+    mediaType: 2, 
+    description: sgc,
+    title: "Jangan Lupa Tersenyum!!",
+    body: wm,
+    thumbnail: fs.readFileSync('./thumbnail.jpg'),
+    sourceUrl: sgc
+     }}
+  })
+}
+handler.help = ['sad']
+handler.tags = ['quotes']
+handler.command = /^(sad)$/i
+export default handler
+
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  let res = "Selamat Malam"
+  if (time >= 4) {
+    res = "Selamat Pagi"
+  }
+  if (time >= 10) {
+    res = "Selamat Siang"
+  }
+  if (time >= 15) {
+    res = "Selamat Sore"
+  }
+  if (time >= 18) {
+    res = "Selamat Malam"
+  }
+  return res
+}
+
+function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+global.sad = [
+'Karena sabar aku sakit. \nKarena setia aku kecewa. \nKarena cinta aku terluka. ',
+'Orang menangis bukan karena mereka lemah. Tapi, \nmereka menangis karena telah berusaha kuat dalam waktu yang lama. ',
+'Baru kali ini aku menyadari bahwa satu orang yang sama \nbisa menyakitimu dua kali, \ndengan kesalahan yang sama pula. ',
+'Jangan tanya aku pergi kemana, \nmencari serpihan hatiku yang kamu \nbuang sepanjang jalan. ',
+'Aku terlalu bersahabat dengan luka \nhingga lupa rasanya bahagia. ',
+'Aku ingin mengatakan bahwa aku merindukanmu. Tapi, \nitu tidak akan mengubah apapun. Jadi, aku hanya memendamnya dan \nberpura-pura tidak merindukanmu. ',
+'Aku berharap kamu menjadi pelangi yang muncul setelah hujan, tapi nyatanya kamu malah pergi bahkan sebelum hujan datang. ',
+'Cinta bukanlah soal fisik yang sempurna, \nmelainkan hati dan penerimaan seutuhnya. ',
+'Orang yang kuat hatinya bukan mereka yang \ntidak pernah menangis. Melainkan orang yang tetap \ntegar ketika banyak orang menyakitinya. ',
+'Ada kelebihan dan kekurangan pada diri tiap orang, \nyang perlu dilakukan adalah memantapkan kelebihan yang kita miliki \nbukan meratapi kekurangan yang ada. ',
+'Luka terdalam adalah ketika kamu tak mampu melihat dengan mata, \ndan kesedihan terpendam adalah ketika \nkamu tak mampu mengucapkan dengan kata-kata. ',
+'Mungkin, kita sepenggal kisah yang lupa ditamatkan \noleh penulisnya. Lalu, terkubur waktu \nhingga membuat tokoh utama terjebak kenangan. ',
+'Ibarat bulan yang tak pernah meninggalkan bumi, \nbintang pun tak pernah meninggalkan langit, \nbegitu juga diriku yang tidak akan perhah \nmeninggalkan kenanganmu.',
+'Tersenyum bukan berarti bahagia, namun terkadang itulah \ncara terbaik untuk menyembunyikan hati yang sedang terluka. ',
+'Sebagai teman lama, mungkin aku tak tahu kabarmu sekarang. \nTapi, teman barumu mungkin tidak mengerti kisah masa lalumu seperti aku.',
+'Jangan buat aku terlalu berharap \njika kamu tidak menginginkanku. ',
+'Aku hanyalah daun yang jatuh dengan terpaksa, karena terlepas dari ranting yang lama menjadi sandaran. ',
+'Terima kasih telah memberi pelajaran, bahwa setiap luka akan \nmenambah ketabahan dan selalu ada keindahan untuk dikisahkan. ',
+'Aku tahu, hidupmu memang bukan tentang aku saja. \nTapi mengertilah, aku cemburu jika kamu terlalu asik \ndengan yang lain dibanding aku. ',
+'Sembuhkan dulu hatimu \nsebelum memulai kisah yang baru lagi',
+'Pernah berjuang untuk sebuah senyuman, \nhingga akhirnya tinggal kenangan. Pernah menjadi bayangan, \nlalu hilang terbawa angan.',
+'Aku ini bukan tempat peraduan. Jadi, \nberhenti untuk mendatangiku ketika kamu bosan',
+'Akan aku ucapkan terima kasih kepada \nSemesta yang begitu baik karena telah \nmendatangkan kamu dalam hidupku',
+'biarkan lah dia memilih apa yang dia mau \nkarna kita bukan prioritas nya '
+]
